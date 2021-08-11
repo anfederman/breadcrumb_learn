@@ -11,10 +11,10 @@ permalink: running_breadcrumb
 Before the Breadcrumb starts moving it is necessary to place the markers in the desired location.
 [See how to place markers](marker_info/marker_types_and_placing_them.md).
 
-By default Breadcrumb starts in **general_mode** with touchscreen ON.
+**Touchscreen is ready once the START button and BATTERY-BARS(top-right corner) are seen.**
+Innitialy when robot is boot up, touchscreen display shows an Innitializing screen. After the system is ready you should be able to see a screen with a START button.
 From initial pose, it will wait for the user to press START and the move to towards the detected marker.
 It is important that the robot sees the first marker, otherwise it will not move.
-**Touchscreen is ready once the START button and BATTERY-BARS(top-right corner) are seen.**
 
 ### Basic Breadcrumb Usage
 
@@ -31,14 +31,12 @@ or in Gazebo:
 
   `roslaunch ground_fiducials sim_ground_fiducials.launch`
 
-`ground_fiducials` is our main that package, that consist of launch files that run:
-- `raspicam_node` that runs onboard Raspberry Pi Camera
+`ground_fiducials` is our main package, that consist of launch files running:
+- `raspicam_node` that starts onboard Raspberry Pi Camera
 - `breadcrumb_description` that spawns a urdf breadcrumb model
 - `pi_sonar` for collision avoidance
-- `aruco_detect` or `stag_node` for detecting markers and forwarding the pose of the markers
-- `breadcrumb_gazebo` for detecting markers in Gazebo
+- `breadcrumb_detect` for detecting markers and forwarding the pose of the markers
 - `ground_fiducials` which handles type of markers
-- `phantom_planner` that keeps track of all the goals and handles preempting
-- `move_smooth` for navigation maneuvers execution
+- `breadcrumb_nav` which handles navigation maneuvers execution
 
-For more advance usage and capabilities refere to [Breadcrumb usage with touchscreen](touchscreen/breadcrumb_usage_with_touchscreen.md).
+For more advance usage and capabilities refere to [Breadcrumb usage with touchscreen](../touchscreen/breadcrumb_usage_with_touchscreen.md).

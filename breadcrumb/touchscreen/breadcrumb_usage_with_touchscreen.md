@@ -14,26 +14,26 @@ It includes:
 - start/stop button to start/stop the robot
 - a continue button for robot to continue after stopping on stop marker
 - settings - UI for the routes management
-- reboot/poweroff buttons
+- reboot/poweroff/reboot-software buttons
 - recording ros topics to a bag file
-- a screen to show the camera for debug purposes
+- a screen to show the camera and joystick for debug purposes
 
 ### Breadcrumb Usage with Touchscreen
 
 To the basic Breadcrumb usability, touchscreen UI adds an additional three features:
 - In order for the Breadcrumb to start moving, start button on a touchscreen should be pressed
-- During the drive, robot can be stopped by pressing the STOP button (to continue, start should be pressed)
-- Breadcrumb will stop on Stop marker and wait for user to press continue
+- During the drive, robot can be stopped by pressing the STOP button (START should be pressed to continue)
+- Breadcrumb will stop on STOP marker and wait for user to press CONTINUE
 
 
-### Touchscreen app main view
+### Touchscreen App main view
 
 <img src="breadcrumb/assets/Touchscreen_main_view.png" >
 
 
-The main goal for our Touchscreen Application is to be as easy to use as possible.
+The main goal for our Touchscreen App is to be as easy to use as possible.
 That's why the main view is very minimalistic with one main ***START/STOP button***.
-And there is also a ***CONTINUE button*** which shows up when the Breadcrumb is waiting on a Stop Marker.
+And there is also a ***CONTINUE button*** which shows up when the Breadcrumb is waiting on a STOP Marker.
 On top of the screen you can see buttons (from left to right):
 
 - Display camera view
@@ -76,31 +76,7 @@ The Breadcrumb will always ignore all the Markers on that list so you should be 
 The Marker on both columns can be easily moved to another position by drag and drop technique.
 But sometimes the list becomes too big for the screen so there is a lock button to lock the drag and drop and after that you can scroll each column without changing the Marker sequence by mistake.
 
-#### Route Management modes:
+#### Route Management option:
 
-Route modes: the route can be followed very strictly or more like a recommended mode, e.g.
-- **Strict mode:** the Breadcrumb moves only towards the next marker that is specified in the selected route, and it ignores all the rest.
-
-        roslaunch ground_fiducials ground_fiducials.launch touchscreen:=true mode:=strict_mode
-
-- **Turn mode:** the Breadcrumb ignores all TURN markers if not set as a priority in a route list.
-    	The idea here is to modify the route list faster and with less marker insertions, while following a set of rules:
-		- TURN markers should be positoned only on the crossroads.
-		- Since most of the TURN markers will be ignored, make sure that each crossroad should either have a TURN marker specified in a chosen route or GO, BIDIRECTIONAL or STOP marker.
-
-	roslaunch ground_fiducials ground_fiducials.launch touchscreen:=true mode:=turn_mode
-
-- **General mode:**
-    There are no crossroads, only a standalone positioned markers representing a route from START (GO Marker) to the STOP(STOP marker).
-    When it sees a marker it sends goal to move there. This mode offers a one-way route.
-
-        roslaunch ground_fiducials ground_fiducials.launch touchscreen:=true mode:=general_mode
-
-Ignoring markers: Touchscreen enables user to ignore certain markers.
-    This is useful, if no one of the modes suits your need. The list of ignored markers can be set in settings.
-
-Depending on which markers you choose, you should run launch file correspondingly. e.g. to use with ArUco:
-
-        roslaunch ground_fiducials ground_fiducials.launch aruco:=true stag:=false
-
-Breadcrumb by default starts in **general_mode** with **Touchscreen enabled**.
+Breadcrumb can prioritize some markers over the others. This is particulary useful if Breadcrumb detects two or more markers at the same time (crossroad), according to the route it knows which to follow. 
+For example if you have two crossroads, you should first input a marker (to the route) breadcrumb should follow in the first crossroad and then as a next marker add the one it should follow in the second crossroad.
