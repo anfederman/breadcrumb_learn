@@ -12,16 +12,16 @@ Before the Breadcrumb starts moving it is necessary to place the markers in the 
 [See how to place markers](marker_info/marker_types_and_placing_them.md).
 
 **Touchscreen is ready once the START button and BATTERY-BARS(top-right corner) are seen.**
-Innitialy when robot is boot up, touchscreen display shows an Innitializing screen. After the system is ready you should be able to see a screen with a START button.
+Innitialy when robot is boot up, touchscreen display shows an **Loading** screen. After the system is ready you should be able to see a screen with a **START** button.
 From initial pose, it will wait for the user to press START and the move to towards the detected marker.
-It is important that the robot sees the first marker, otherwise it will not move.
+It is important that the robot sees the first marker, otherwise it will not move and pop-up a warning on the screen.
 
 ### Basic Breadcrumb Usage
 
-The very basic Breadcrumb usability is to place a robot, such that it detects the first marker and it will start to move.
 Breadcrumb will smoothly navigate between markers, where each marker arrow should point in the direction of the next marker.
 If the robot encounters a STOP marker, it will stop on it and turn in the direction of arrow.
-In case where no touchscreen is used, robot will continue it's path only if it sees a next marker in the direction it turned, otherwise it has finished its task.
+Once robot is on the STOP marker, it will wait until **CONTINUE** is pressed on the touchscreen and then continue driving in the direction of the arrow. 
+Breadcrumb does not neccesary need to see a next marker from the position on STOP marker.
 
 To run, type:
 
