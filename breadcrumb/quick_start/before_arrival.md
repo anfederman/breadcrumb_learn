@@ -11,8 +11,6 @@ permalink: before_arrival
 Breadcrumb is controlled by a Raspberry Pi 3 or 4.
 If you have one of these (especially if you have a camera for it), there are numerous things you can profitably do by running the Ubiquity software on your Pi. It is as though you were running a robot with no motors.
 
-* You can install the Breadcrumb image. The image may be [downloaded](https://downloads.ubiquityrobotics.com/) from the Ubiquity Robotics web site.  Burn it to a mini SD card and boot it up on your Raspberry Pi.
-
 * You can install our virtual machine on your workstation. It can be [downloaded](https://downloads.ubiquityrobotics.com/) from the Ubiquity Robotics site. It has ROS already installed.
 
 --or, if you have a machine running Ubuntu 16.04 --
