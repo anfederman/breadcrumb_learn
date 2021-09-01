@@ -1,9 +1,3 @@
----
-layout: default
-title:  "Raspberry Pi Camera"
-permalink: camera
----
-
 #### &uarr;[top](https://ubiquityrobotics.github.io/breadcrumb_learn/)
 
 # Raspberry Pi Camera
