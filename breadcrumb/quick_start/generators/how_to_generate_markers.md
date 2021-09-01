@@ -12,11 +12,13 @@ For more information about fiducial markers refer to [marker_info](../../basic_u
 
 Scripts offer a simple UI, which enables user to re-configure fiducials according to their need.
 
-Location of scripts is: `breadcrumb/breadcrumb_detect/scripts`
+Location of scripts is in Breadcrumb repository in the `breadcrumb/breadcrumb_detect/scripts` directory:
 
 - `ArUco/gen_markers.py` -> generate Aruco markers with frames
 - `STag/gen_markers_autogen.py` -> generate STag markers with frames by generating also the inner part.
 - `STag/gen_markers.py`  -> generate STag markers with frames by getting the inner part from downloaded image library. Download the required images from [here](https://drive.google.com/drive/folders/0ByNTNYCAhWbIV1RqdU9vRnd2Vnc).
+
+Script were tested using python2.7.
 
 ## ArUco Dictionary ID
 
