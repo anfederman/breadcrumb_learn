@@ -22,4 +22,4 @@ permalink: driving_a_breadcrumb
 </video>
 
 
-- Robot can also be driven with a [keyboard_teleop](https://learn.ubiquityrobotics.com/keyboard_teleop), by an optional [Logitech controller](https://learn.ubiquityrobotics.com/logitech) or through the Touchscreen UI, which can also be opened on your Mobile Phone and controller through that.
+- Robot can also be driven with a [keyboard_teleop](https://learn.ubiquityrobotics.com/keyboard_teleop), by an optional [Logitech controller](https://learn.ubiquityrobotics.com/logitech) or through the Touchscreen UI, which can also be opened on your Mobile Phone and controlled through that.
