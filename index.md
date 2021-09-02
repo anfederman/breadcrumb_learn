@@ -27,6 +27,7 @@ The Breadcrumb robot is strong, fast, and heavy. Initially, use lumber, bricks, 
 2.  [Fiducial markers generators](breadcrumb/quick_start/generators/how_to_generate_markers.md)
 3.  [How to setup the Raspberry Pi Camera](breadcrumb/quick_start/camera.md)
 4.  [How to setup the Raspberry Pi Touchscreen](breadcrumb/quick_start/touchscreen.md)
+5.  [How to setup the LiDAR](breadcrumb/quick_start/lidar.md)
 
 #### Basic Breadcrumb Usage
 
@@ -41,8 +42,9 @@ The Breadcrumb robot is strong, fast, and heavy. Initially, use lumber, bricks, 
 
 #### Doing More With Your Breadcrumb
 
-1.  [Visualize with Rviz]((breadcrumb/doing_more/rviz.md))
-1.  [Running in Gazebo]((breadcrumb/doing_more/gazebo.md))
+1.  [Visualize with Rviz](breadcrumb/doing_more/rviz.md)
+2.  [Running in Gazebo](breadcrumb/doing_more/gazebo.md)
+3.  [Modifying navigation parameters](breadcrumb/doing_more/tuning_nav.md)
 
 #### Support and Verification Of Your Robot
 
