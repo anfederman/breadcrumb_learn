@@ -23,6 +23,15 @@ If the robot encounters a STOP marker, it will stop on it and turn in the direct
 Once robot is on the STOP marker, it will wait until **CONTINUE** is pressed on the touchscreen and then continue driving in the direction of the arrow. 
 Breadcrumb does not neccesary need to see a next marker from the position on STOP marker.
 
+To make a system work as intended, set of rules should be followed to prevent undesired behaviour.
+
+### Set of Rules
+
+**#1.** Each marker should point in the direction of the next one <br>
+**#2.** TURN markers should be used to change driving direction (In the crossroads) <br>
+**#3.** BIDIRECTIONAL markers should be used for two-way routes, where robot can drive in both directions and not for changing the driving direction. In other words, robot should never come sideways to the BIDIRECTIONAL marker, since it may turn in the wrong direction as intended.<br>
+**#4.** GO marker should be used for one-way routes, where robot can drive only in one direction <br>
+
 To run, type:
 
   `roslaunch ground_fiducials ground_fiducials.launch`
@@ -31,10 +40,9 @@ or in Gazebo:
 
   `roslaunch ground_fiducials sim_ground_fiducials.launch`
 
-`ground_fiducials` is our main package, that consist of launch files running:
+Breadcrumb main package are:
 - `raspicam_node` that starts onboard Raspberry Pi Camera
 - `breadcrumb_description` that spawns a urdf breadcrumb model
-- `pi_sonar` for collision avoidance
 - `breadcrumb_detect` for detecting markers and forwarding the pose of the markers
 - `ground_fiducials` which handles type of markers
 - `breadcrumb_nav` which handles navigation maneuvers execution
