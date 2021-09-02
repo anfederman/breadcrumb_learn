@@ -13,7 +13,9 @@ permalink: tuning_nav
 - **Execution of navigation goals** (Move Smooth)
 - **Collision avoidance** based on LiDAR and/or Sonars
 
-## Node Details (You can skip that part if you are not interested in the internals)
+## Node Details 
+
+You can skip that part if you are not interested in the internals.
 
 ### Phantom planner
 
@@ -37,6 +39,10 @@ according to this new detected marker.
 
 Move smooth is a navigation node that receives a maximum of two goals at a time in an arbitrary frame and executes navigation maneuvers to arrive to the goals.
 If more than two goals are send, the QueuedActionServer(Custom ROS Action Server running in parallel to move_smooth) preempts the first goal send, starts executing the next(second) goal in the queue and adds the new goal to the queue. 
+
+### Collision Avoidance
+
+If data from a laser scanner or sonars is available, collision avoidance can be performed. If an obstacle is detected, it will slow or stop in an attempt to avoid a collision.
 
 ## Dynamically Reconfigure Navigation parameters
 
