@@ -8,7 +8,7 @@ permalink: generating_fiducials
 
 # Generating Fiducials
 
-For more information about fiducial markers refer to [marker_info](../../basic_usage/marker_info/marker_types_and_placing_them.md)
+For more information about fiducial markers refer to [marker_info](marker_types_and_placing_them.md)
 
 Scripts offer a simple UI, which enables user to re-configure fiducials according to their need.
 

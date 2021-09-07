@@ -58,7 +58,7 @@ When you press the desired route it turns green in the settings page, and when t
 When it moves to that marker it starts to look after the 2. one and so forth till the last one.
 On the last one the Breadcrumb starts searching for the 1. one and basically this loop can last forever :)
 or till the batteries are empty.
-More info about battery handling and charging can be found [here](../battery.md).
+More info about battery handling and charging can be found [here](battery.md).
 
 <br>
 Route management view can be found by pressing the Settings button on the main view.

@@ -9,7 +9,7 @@ permalink: running_breadcrumb
 # Running Breadcrumb
 
 Before the Breadcrumb starts moving it is necessary to place the markers in the desired location.
-[See how to place markers](marker_info/marker_types_and_placing_them.md).
+[See how to place markers](marker_types_and_placing_them.md).
 
 **Touchscreen is ready once the START button and BATTERY-BARS(top-right corner) are seen.**
 Innitialy when robot is boot up, touchscreen display shows an **Loading** screen. After the system is ready you should be able to see a screen with a **START** button.
@@ -47,4 +47,4 @@ Breadcrumb main package are:
 - `ground_fiducials` which handles type of markers
 - `breadcrumb_nav` which handles navigation maneuvers execution
 
-For more advance usage and capabilities refere to [Breadcrumb usage with touchscreen](../touchscreen/breadcrumb_usage_with_touchscreen.md).
+For more advance usage and capabilities refere to [Breadcrumb usage with touchscreen](breadcrumb_usage_with_touchscreen.md).

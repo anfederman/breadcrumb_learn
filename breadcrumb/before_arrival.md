@@ -21,9 +21,9 @@ The ROS site gives full instructions.
 See the [instructions](https://ubiquityrobotics.github.io/learn/connecting).
 
 * You can generate and print fiducials. You can then recognize fiducials using the camera.
-See the [instructions](generators/how_to_generate_markers.md).
+See the [instructions](how_to_generate_markers.md).
 
 * You can follow the Pi using Rviz and rqt_image_view on your workstation.
-See the [instructions](../doing_more/rviz) in the Doing More section.
+See the [instructions](rviz) in the Doing More section.
 
-* We are also offering a Gazebo simulation you can run on your Workstation and a couple of demos you can refere to, to get a sense how the Breadcrumb is intended to be running. For more infomations go [here](../doing_more/gazebo)
+* We are also offering a Gazebo simulation you can run on your Workstation and a couple of demos you can refere to, to get a sense how the Breadcrumb is intended to be running. For more infomations go [here](gazebo)
