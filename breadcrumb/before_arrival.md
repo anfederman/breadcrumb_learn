@@ -8,14 +8,14 @@ permalink: before_arrival
 
 # If You Don't Have Your Robot Yet
 
-Breadcrumb is controlled by a Raspberry Pi 3 or 4.
-If you have one of these (especially if you have a camera for it), there are numerous things you can profitably do by running the Ubiquity software on your Pi. It is as though you were running a robot with no motors.
+Breadcrumb is optimized to run on a Raspberry Pi 3 or 4.
+If you have one (especially if you have Pi Camera for it), there are numerous things you can do easily*, even if you don't have one of out Magni Robots.  It would be possible to run our software on other platforms, but it would take a lot of effort to edit the various parameters.
 
 * You can install our virtual machine on your workstation. It can be [downloaded](https://downloads.ubiquityrobotics.com/) from the Ubiquity Robotics site. It has ROS already installed.
 
 --or, if you have a machine running Ubuntu 16.04 --
 * You can set up ROS on your workstation.
-The ROS site gives full instructions.
+The ROS site gives full instructions. By the time yu read this, we may have already migrated to a Noetic version of the softwate.
 
 * You can connect the Pi to your workstation directly.
 See the [instructions](https://ubiquityrobotics.github.io/learn/connecting).
