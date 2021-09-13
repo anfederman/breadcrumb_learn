@@ -7,7 +7,7 @@ permalink: need_to_know
 
 ### About Magni
 
-Ubiquity Robotics use Raspberry Pi 3s running Ubuntu 16.04, ROS Kinetic and custom software for the Magni platform. There are also utility programs that will enable you to connect to a local area network.
+Ubiquity Robotics currently use Raspberry Pi 3s or 4s running Ubuntu 16.04, ROS Kinetic and custom software for the Magni platform. There are also utility programs that will enable you to connect to a local area network. In the near future we will be upgrading to Ubuntu 20.04 and ROS Noetic.
 
 [Batteries](#batteries)  
 [Communications](#communications)  
@@ -18,9 +18,9 @@ Ubiquity Robotics use Raspberry Pi 3s running Ubuntu 16.04, ROS Kinetic and cust
 
 ### Batteries
 
-The robot ships by air worldwide. The batteries are not included in order to keep shipping costs down, as they are are difficult to ship worldwide and safety restrictions vary by destination. The recommended lead acid batteries are easy to source locally.
+The robot ships by air worldwide. The batteries are not included in order to keep shipping costs down, as they are are difficult to ship worldwide and safety restrictions vary by destination. The recommended lead acid batteries are easy to acquire locally.
 
-An added advantage of not including batteries is that the robot accepts different battery sizes so the user can select batteries depending on whether they prefer a long-endurance heavier robot or a short- endurance lighter robot. In short you need to find your own batteries to put in the robot and these are commonly available online (https://www.batterysharks.com/) or in local stores that supply products for scooters, wheelchairs, uninterupped power supply systems or even automotive.
+An added advantage of not shipping batteries is that the robot accepts different battery sizes; the user can select batteries depending on whether they prefer a long-endurance heavier robot or a short- endurance lighter robot.  You need to select batteries that best serve your intended use. These are commonly available online (https://www.batterysharks.com/) or in local stores that supply products for scooters, wheelchairs, uninterupped power supply systems or even automotive.
 
 <H4 style="color:red">AT ALL TIMES IF RUNNING OR CHARGING THE BATTERY VOLTAGE CONNECTED TO THE Main BOARD MUST REMAIN 30.0V OR LESS.</H4>
 
@@ -28,7 +28,7 @@ An added advantage of not including batteries is that the robot accepts differen
 
 The robot requires 2X 12V lead acid style batteries and typically we recommend one of the choices in this section.
 
-1250 or a 1255 sized battery. Typical capacity 4-6 Ah capacities provides around 4 hours of endurance. Used when portability of the robot is at a premium - for example if you are travelling by air with the robot.
+1250 or a 1255 sized battery. Typical capacity 4-6 Ah provides around 4 hours of endurance. Used when portability of the robot is at a premium - for example if you are travelling by air with the robot.
 
 1270 sized battery. Typical capacity 7AH - 10 Ah. The preferred and most common choice. Usually provides 7-8 hours of continuous use with a typical duty cycle. This size battery makes the robot still light enough to lift.
 
@@ -61,9 +61,9 @@ Most of the live administration to the robot is normally done by opening an SSH 
 
     ssh ubuntu@10.42.0.1
 
-Of course names can be used for the host but above a simple IP address is used.  The default password for shipped units is  ```ubuntu```
+Of course, names can be used for the host, but a simple IP address is used in the example above.  The default password for shipped units is  ```ubuntu```
 
-Although the host computer has a robust file system less chance of file system corruption is always possible if the Linux system is shutdown in a clean way.  When connected to the robot with an SSH console this is how to reboot (-r) or completely halt (-h) the robot to do a clean power off. Below is the full halt which will ask for root password that is ```ubuntu``` as shipped from factory.
+Although the host computer has a robust file system, less chance of file system corruption is always possible if the Linux system is shutdown in a clean way.  When connected to the robot with an SSH console this is how to reboot (-r) or completely halt (-h) the robot to do a clean power off. Below is the full halt which will ask for root password that is ```ubuntu``` as shipped from factory.
 
     sudo shutdown -h now
 
