@@ -11,10 +11,10 @@ The Breadcrumb is navigating itself using our floor stickers called Fiducials. T
 
 | Marker type        | Image           |
 | ------------- |:-------------:|
-|  **Go marker**  has a single arrow which point to the direction where the Breadcrumb will drive. | <img src="breadcrumb/basic_usage/marker_info/go_marker.jpg" >  |
-|  **Stop marker** is made to halt the Breadcrumb in that spot. After the Breadcrumb moves on top of the Stop marker it rotates in a direction of a marker arrow. While Breadcrumb waits on a Stop marker the user can load or unload the packages. The robot will resume following markers when user presses the CONTINUE button on the touchscreen of the Breadcrumb. | <img src="breadcrumb/basic_usage/marker_info/stop_marker.jpg" >  |
-|  **Turn marker** is made for creating crossroads. Crossroad is a couple of markers in the same location (they must not overlap!), where each is pointing in an arbitrary/different direction. Purpose of Turn markers and crossroads is to change the driving direction of the Breadcrumb. | <img src="breadcrumb/basic_usage/marker_info/turn_marker.jpg" >  |
-|  **Bidirectional marker** is the only marker with 2 arrows in it. Breadcrumb drives allong the arrow that requires less robot rotation. Bidirectional marker is good for two-way routes where Breadcrumb requires to move in both directions for example narrow aisles where there is not enough space for both a forward and return path. | <img src="breadcrumb/basic_usage/marker_info/bidirectional_marker.jpg" >  |
+|  **Go marker**  has a single arrow which point to the direction where the Breadcrumb will drive. | <img src="breadcrumb/assets/go_marker.jpg" >  |
+|  **Stop marker** is made to halt the Breadcrumb in that spot. After the Breadcrumb moves on top of the Stop marker it rotates in a direction of a marker arrow. While Breadcrumb waits on a Stop marker the user can load or unload the packages. The robot will resume following markers when user presses the CONTINUE button on the touchscreen of the Breadcrumb. | <img src="breadcrumb/assets/stop_marker.jpg" >  |
+|  **Turn marker** is made for creating crossroads. Crossroad is a couple of markers in the same location (they must not overlap!), where each is pointing in an arbitrary/different direction. Purpose of Turn markers and crossroads is to change the driving direction of the Breadcrumb. | <img src="breadcrumb/assets/turn_marker.jpg" >  |
+|  **Bidirectional marker** is the only marker with 2 arrows in it. Breadcrumb drives allong the arrow that requires less robot rotation. Bidirectional marker is good for two-way routes where Breadcrumb requires to move in both directions for example narrow aisles where there is not enough space for both a forward and return path. | <img src="breadcrumb/assets/bidirectional_marker.jpg" >  |
 
 Breadcrumb is enabled to be used either with STag or ArUco markers.
 
